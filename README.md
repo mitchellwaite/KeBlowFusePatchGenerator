@@ -38,7 +38,8 @@ Fuse set example:
     | Fuseset 01:  | 0f0f0f0f0f0f0ff0  Retail Phat 
     =============== OR ============================
     | Fuseset 01:  | 0f0f0f0f0f0f0f0f  Devkit does not matter slim or phat
-
+    =============== OR ============================
+    | Fuseset 01:  | 0f0f0f0f0f0ff00f  Test kit
     
     | Fuseset 02:  | 0000000000000000  CB FUSE COUNT. LEAVE BLANK TO RUN ANY
     =============== OR ============================
@@ -50,7 +51,7 @@ Fuse set example:
     =============== OR ============================
     | Fuseset 02:  | 00000000000F0000  CB SEQ 12. (RGH1 Patched, RGH1.2/2 only)
     =============== OR ============================
-    | Fuseset 02:  | 000000000000FFFF  CB SEQ 13-16. (Don't fucking do this.) You'll need to glitch CB Fusecheck to boot. (RJTOP)
+    | Fuseset 02:  | 000000000000FFFF  CB SEQ 13-16. (Don't fucking do this. Console will never boot retail again.)
 
     
     | Fuseset 03:  | eed5b3ae123af5c0  CPU KEY. FIRST HALF
