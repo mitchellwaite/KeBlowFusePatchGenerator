@@ -103,6 +103,16 @@ namespace KeBlowFusePatchGenerator {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] Fuse_Line_01_TestKit {
+            get {
+                object obj = ResourceManager.GetObject("Fuse Line 01 TestKit", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] GetFuseLines {
             get {
                 object obj = ResourceManager.GetObject("GetFuseLines", resourceCulture);

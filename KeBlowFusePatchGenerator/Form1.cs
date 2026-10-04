@@ -88,7 +88,8 @@ namespace KeBlowFusePatchGenerator
                     {
                         if (consoleType != "Phat Retail" &&
                             consoleType != "Slim Retail" &&
-                            consoleType != "Development Kit")
+                            consoleType != "Development Kit" &&
+                            consoleType != "Test Kit")
                         {
                             MessageBox.Show("Pick a valid console type.", "Can't", MessageBoxButtons.OK);
                         }
@@ -538,6 +539,11 @@ namespace KeBlowFusePatchGenerator
                 else if (consoleType == Constants.DevKitConsoleType)
                 {
                     fuseLine01Bytes = Resource1.Fuse_Line_01_DevKit;
+                }
+
+                else if (consoleType == Constants.TestKitConsoleType)
+                {
+                    fuseLine01Bytes = Resource1.Fuse_Line_01_TestKit;
                 }
 
                 else

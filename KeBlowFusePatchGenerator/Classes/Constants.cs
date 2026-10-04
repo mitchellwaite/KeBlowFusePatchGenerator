@@ -37,6 +37,8 @@ namespace KeBlowFusePatchGenerator.Classes
         public static string SlimRetailConsoleType { get; } = "Slim Retail";
         public static string DevKitConsoleType { get; } = "Development Kit";
 
+        public static string TestKitConsoleType { get; } = "Test Kit";
+
         public static string OutputPatchPath = AppDomain.CurrentDomain.BaseDirectory + @"Output\OutputPatch.bin";
 
         public static int CPUKeyBytesLength = 16;

@@ -114,7 +114,8 @@
             this.cmConsoleType.Items.AddRange(new object[] {
             "Phat Retail",
             "Slim Retail",
-            "Development Kit"});
+            "Development Kit",
+            "Test Kit"});
             this.cmConsoleType.Location = new System.Drawing.Point(179, 120);
             this.cmConsoleType.Name = "cmConsoleType";
             this.cmConsoleType.Size = new System.Drawing.Size(121, 23);
