@@ -366,13 +366,17 @@ namespace KeBlowFusePatchGenerator
                         switch (hacktype)
                         {
                             case "JTAG":
-                                patchesFileName = "patches_xenon.bin"; fusesPatchOffset = 0x538;
+                                patchesFileName = "patches_xenon.bin";
                                 break;
                             case "Glitch":
-                                patchesFileName = "patches_fat.bin"; fusesPatchOffset = 0x414;
+                                patchesFileName = "patches_fat.bin";
                                 break;
                             case "Glitch2":
-                                patchesFileName = "patches_g2falcon.bin"; fusesPatchOffset = 0x424;
+                                patchesFileName = "patches_g2xenon.bin";
+                                break;
+                            case "Glitch2m":
+                            case "DevGL":
+                                patchesFileName = "patches_g2mxenon.bin";
                                 break;
                         }
                         break;
@@ -382,13 +386,17 @@ namespace KeBlowFusePatchGenerator
                         switch (hacktype)
                         {
                             case "JTAG":
-                                patchesFileName = "patches_zephyr.bin"; fusesPatchOffset = 0x538;
+                                patchesFileName = "patches_zephyr.bin";
                                 break;
                             case "Glitch":
-                                patchesFileName = "patches_fat.bin"; fusesPatchOffset = 0x414;
+                                patchesFileName = "patches_fat.bin";
                                 break;
                             case "Glitch2":
-                                patchesFileName = "patches_g2falcon.bin"; fusesPatchOffset = 0x424;
+                                patchesFileName = "patches_g2zephyr.bin";
+                                break;
+                            case "Glitch2m":
+                            case "DevGL":
+                                patchesFileName = "patches_g2mzephyr.bin";
                                 break;
                         }
                         break;
@@ -398,13 +406,17 @@ namespace KeBlowFusePatchGenerator
                         switch (hacktype)
                         {
                             case "JTAG":
-                                patchesFileName = "patches_falcon.bin"; fusesPatchOffset = 0x538;
+                                patchesFileName = "patches_falcon.bin";
                                 break;
                             case "Glitch":
-                                patchesFileName = "patches_fat.bin"; fusesPatchOffset = 0x414;
+                                patchesFileName = "patches_fat.bin";
                                 break;
                             case "Glitch2":
-                                patchesFileName = "patches_g2falcon.bin"; fusesPatchOffset = 0x424;
+                                patchesFileName = "patches_g2falcon.bin";
+                                break;
+                            case "Glitch2m":
+                            case "DevGL":
+                                patchesFileName = "patches_g2mfalcon.bin";
                                 break;
                         }
                         break;
@@ -414,19 +426,17 @@ namespace KeBlowFusePatchGenerator
                         switch (hacktype)
                         {
                             case "JTAG":
-                                patchesFileName = "patches_jasper.bin"; fusesPatchOffset = 0x538;
+                                patchesFileName = "patches_jasper.bin";
                                 break;
                             case "Glitch":
-                                patchesFileName = "patches_fat.bin"; fusesPatchOffset = 0x414;
+                                patchesFileName = "patches_fat.bin";
                                 break;
                             case "Glitch2":
-                                patchesFileName = "patches_g2jasper.bin"; fusesPatchOffset = 0x424;
+                                patchesFileName = "patches_g2jasper.bin";
                                 break;
                             case "Glitch2m":
-                                patchesFileName = "patches_g2mjasper.bin"; fusesPatchOffset = 0x5E0;
-                                break;
                             case "DevGL":
-                                patchesFileName = "patches_g2mjasper.bin"; fusesPatchOffset = 0x5E0;
+                                patchesFileName = "patches_g2mjasper.bin";
                                 break;
                         }
                         break;
@@ -437,16 +447,14 @@ namespace KeBlowFusePatchGenerator
                         {
 
                             case "Glitch":
-                                patchesFileName = "patches_trinity.bin"; fusesPatchOffset = 0x424;
+                                patchesFileName = "patches_trinity.bin";
                                 break;
                             case "Glitch2":
-                                patchesFileName = "patches_g2trinity.bin"; fusesPatchOffset = 0x424;
+                                patchesFileName = "patches_g2trinity.bin";
                                 break;
                             case "Glitch2m":
-                                patchesFileName = "patches_g2mtrinity.bin"; fusesPatchOffset = 0x5E0;
-                                break;
                             case "DevGL":
-                                patchesFileName = "patches_g2mtrinity.bin"; fusesPatchOffset = 0x5E0;
+                                patchesFileName = "patches_g2mtrinity.bin";
                                 break;
                         }
                         break;
@@ -456,13 +464,11 @@ namespace KeBlowFusePatchGenerator
                         switch (hacktype)
                         {
                             case "Glitch2":
-                                patchesFileName = "patches_g2corona.bin"; fusesPatchOffset = 0x434;
+                                patchesFileName = "patches_g2corona.bin";
                                 break;
                             case "Glitch2m":
-                                patchesFileName = "patches_g2mcorona.bin"; fusesPatchOffset = 0x5C0;
-                                break;
                             case "DevGL":
-                                patchesFileName = "patches_g2mcorona.bin"; fusesPatchOffset = 0x5C0;
+                                patchesFileName = "patches_g2mcorona.bin";
                                 break;
                         }
                         break;
@@ -472,13 +478,11 @@ namespace KeBlowFusePatchGenerator
                         switch (hacktype)
                         {
                             case "Glitch2":
-                                patchesFileName = "patches_g2corona_WB.bin"; fusesPatchOffset = 0x4AC;
+                                patchesFileName = "patches_g2corona_WB.bin";
                                 break;
                             case "Glitch2m":
-                                patchesFileName = "patches_g2mcorona_WB.bin"; fusesPatchOffset = 0x5F4;
-                                break;
                             case "DevGL":
-                                patchesFileName = "patches_g2mcorona_WB.bin"; fusesPatchOffset = 0x5F4;
+                                patchesFileName = "patches_g2mcorona_WB.bin";
                                 break;
                         }
                         break;
@@ -488,13 +492,11 @@ namespace KeBlowFusePatchGenerator
                         switch (hacktype)
                         {
                             case "Glitch2":
-                                patchesFileName = "patches_g2corona_WB4G.bin"; fusesPatchOffset = 0x1534;
+                                patchesFileName = "patches_g2corona_WB4G.bin";
                                 break;
                             case "Glitch2m":
-                                patchesFileName = "patches_g2mcorona_WB4G.bin"; fusesPatchOffset = 0x167C;
-                                break;
                             case "DevGL":
-                                patchesFileName = "patches_g2mcorona_WB4G.bin"; fusesPatchOffset = 0x167C;
+                                patchesFileName = "patches_g2mcorona_WB4G.bin";
                                 break;
                         }
                         break;
@@ -615,7 +617,7 @@ namespace KeBlowFusePatchGenerator
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show("Couldn't calculate fuses.\n\n" + ex.Message + "\n\n" + ex.GetBaseException().ToString(), "KeBlowFusePatchGenerator Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public string GetFormattedFuseLinesString()
@@ -799,7 +801,7 @@ namespace KeBlowFusePatchGenerator
 
             catch (Exception ex)
             {
-
+                MessageBox.Show("Couldn't generate patch.\n\n" + ex.Message + "\n\n" + ex.GetBaseException().ToString(), "KeBlowFusePatchGenerator Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void cmConsoleType_SelectedIndexChanged(object sender, EventArgs e)
@@ -821,6 +823,12 @@ namespace KeBlowFusePatchGenerator
                     {
                         byte[] defaultPatches = File.ReadAllBytes(defaultPatchesFilePath);
 
+                        // Search the chosen patch file for the index of
+                        // the patch that disables HvxBlowFuses (offset 0x0000A560 in the 17559 HV) 
+                        fusesPatchOffset = defaultPatches.AsSpan().IndexOf(new byte[] { 0x00, 0x00, 0xA5, 0x60 });
+
+                        if (fusesPatchOffset < 0) throw new InvalidDataException("Offset for HvxBlowFuses patch not found");
+
                         string outputPath = patchesFileName;
 
                         using (BinaryWriter writer = new BinaryWriter(File.Open(outputPath, FileMode.Create)))
@@ -836,13 +844,15 @@ namespace KeBlowFusePatchGenerator
 
                     }
                 }
-
+                else
+                {
+                    throw new ArgumentNullException("Motherboard or hack type was blank!");
+                }
 
             }
-
-            catch
+            catch(Exception ex)
             {
-
+                MessageBox.Show("Couldn't auto-apply patch.\n\n" + ex.Message + "\n\n" + ex.GetBaseException().ToString(), "KeBlowFusePatchGenerator Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
