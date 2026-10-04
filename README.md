@@ -24,6 +24,7 @@
 - KeBlowFuses creates the xex for the user to run.  For now, resuming threads causes the console to hang. To be fixed.
 
 - **FOR THE BLIND: THERE IS NO GOING BACK ONCE YOU BLOW A FUSE. MAKE SURE WHAT YOU WANT TO BLOW IS CORRECT. THEN CHECK IT AGAIN. AND ONE LAST TIME FOR GOOD MEASURE.**
+- **FOR THE 2X BLIND: I'M NOT GOING TO HELP YOU MAKE A FFFFFALCON. IF YOU KNOW WHAT YOU'RE DOING, YOU CAN MODIFY THIS APP APPROPRIATELY TO DO THAT. DON'T TOUCH FUSESET 0.**
 
 Left most bit is most significant. This is how the nibbles are interpreted. First nibble on Fuse set 00 being 0xC means 1100 in binary.
 
